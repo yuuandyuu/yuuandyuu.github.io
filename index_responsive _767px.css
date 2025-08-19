@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@media screen and (max-width: 767px) {
+  /* body {
+    flex-direction: column;
+  } */
+
+  /*一番左の部分：左側の花飾り*/
+  .left_flower {
+    display: none;
+  }
+
+  /*nav部分：始まり*/
+  nav {
+    width: 32%;
+    font-size: 15px;
+  }
+
+  /*nav部分：左側の青い背景*/
+  .left_blue_ribbon {
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 10%);
+  }
+
+  /*nav部分：店の名前*/
+  .title {
+    top: 30px;
+  }
+
+  /*nav部分：詳しいリスト*/
+  .contents {
+    top: 200px;
+  }
+
+  .list_title {
+    padding: 10px 5% 10px 5%;
+  }
+
+  .list_title h2 {
+    font-size: 17px;
+  }
+
+  .list_detail {
+    padding: 10px 0;
+    margin: 0;
+    background-color: rgba(106, 133, 201, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+    display: none;
+  }
+
+  .list_detail li {
+    margin: 0 0 2% 10%;
+  }
+
+  /*main部分：始まり*/
+
+  .main_wraper {
+    width: 68%;
+    padding: 0 30px;
+  }
+
+  /*main部分：上の青い背景*/
+  .right_blue_ribbon {
+    height: 300px;
+    clip-path: polygon(0 0, 100% 32%, 100% 93%, 0 68%);
+    z-index: -200;
+  }
+
+  /*main部分：四つ一般的な機能*/
+  .section_wrapper {
+    margin-top: 30px;
+  }
+  .detail_wrapper {
+    margin-top: 20px;
+  }
+  .function_button a {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* margin: 10px; */
+    margin: 0 2%;
+  }
+  .picture_above {
+    display: flex;
+  }
+  .picture_below {
+    display: flex;
+  }
+
+  /*main部分：詳しいニュース*/
+  /* .news_area {
+  margin: 0 44px 30px 27px;
+  padding: 0 8px;
+} */
+  .news_detail {
+    /* margin: 30px auto; */
+    background-color: aliceblue;
+    padding: 5%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  .news_detail h3 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+  .news_detail ul {
+    display: flex;
+    font-size: 12px;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+  .news_detail li {
+    border-radius: 6px;
+    list-style: none;
+    margin: 0 5px;
+    padding: 2px;
+  }
+
+  .picture_show {
+    flex-direction: column;
+  }
+  .picture_show img {
+    width: 100%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+  .picture_show img:last-child {
+    margin-right: 0;
+  }
+  .limit {
+    background-color: orange;
+  }
+  .strawberry {
+    background-color: pink;
+  }
+  .milk {
+    background-color: bisque;
+  }
+  .tea {
+    background-color: yellowgreen;
+  }
+  .pineapple {
+    background-color: FBC948;
+  }
+  .yuzu {
+    background-color: yellow;
+  }
+  /*main部分：右側の花飾り*/
+  .right_flower {
+    position: absolute;
+    top: 0;
+    left: 530px;
+    width: 240px;
+    height: 100%;
+    overflow: hidden;
+    z-index: -100;
+  }
+
+  /*main部分：著者名*/
+  footer {
+    text-align: center;
+    color: gray;
+  }
+  footer i {
+    color: lightgray;
+  }
+}

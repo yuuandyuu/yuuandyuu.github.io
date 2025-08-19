@@ -1,10 +1,22 @@
-<head>
-  <link rel="stylesheet" href="index.css" />
-  <script
-    src="https://kit.fontawesome.com/47e25568ad.js"
-    crossorigin="anonymous"
-  ></script>
-  <!-- 
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>折り紙と花端タピオカカフェ</title>
+    <meta
+      name="description"
+      content="空想の店です。折り紙と花端タピオカカフェのホームページです。
+      タピオカドリンクやスイーツのメニュー、店舗情報、アクセス方法などを紹介しています。"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="../responsive/index_responsive.css" />
+    <link rel="stylesheet" href="../responsive/index_responsive _767px.css" />
+    <link rel="stylesheet" href="../responsive/index_responsive _500px.css" />
+    <script
+      src="https://kit.fontawesome.com/47e25568ad.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 
     function openMenu(element) {
       const menu = element.closest(".menu_switch");
       menu.classList.add("menu_open");
@@ -21,155 +33,158 @@
       const menu = element.closest(".menu_switch");
       menu.classList.add("menu_open");
     -->
-  <script>
-    /**
-     * メニューの開閉の切替
-     */
-    function switchMenu(element) {
-      const menu = element.closest(".menu_switch");
-      // メニューが開いている場合、メニューを閉じる。
-      if (menu.classList.contains("menu_open")) {
-        menu.classList.remove("menu_open");
-      } else {
-        // メニューが閉じている場合、他のメニューを閉じる同時に、自身のメニューを開く。
-        const menus = document.getElementsByClassName("menu_open");
-        for (const menu0 of menus) {
-          menu0.classList.remove("menu_open");
+    <script>
+      /**
+       * メニューの開閉の切替
+       */
+      function switchMenu(element) {
+        const menu = element.closest(".menu_switch");
+        // メニューが開いている場合、メニューを閉じる。
+        if (menu.classList.contains("menu_open")) {
+          menu.classList.remove("menu_open");
+        } else {
+          // メニューが閉じている場合、他のメニューを閉じる同時に、自身のメニューを開く。
+          const menus = document.getElementsByClassName("menu_open");
+          for (const menu0 of menus) {
+            menu0.classList.remove("menu_open");
+          }
+          menu.classList.add("menu_open");
         }
-        menu.classList.add("menu_open");
       }
-    }
-  </script>
-</head>
-<body>
-  <!--Part1 left flower-->
-  <div class="left_flower">
-    <div class="nav_mask"></div>
-    <img src="img/左側葉_ホームページ.png" alt="" />
-  </div>
-  <!--Part2 nav-->
-  <nav>
-    <div class="left_blue_ribbon"></div>
-
-    <div class="title">
-      <a href="index.html">
-        <img src="img/小さいタイトル.png" alt="" />
-        <div class="title_text">タピオカカフェ</div>
-      </a>
+    </script>
+  </head>
+  <body>
+    <!--Part1 left flower-->
+    <div class="left_flower">
+      <div class="nav_mask"></div>
+      <img src="../img/左側葉_ホームページ.png" alt="" />
     </div>
-
-    <div class="contents">
-      <h1>Contents</h1>
-      <div class="homepage">
-        <a href="index.html">
-          <div class="list_title">
-            <h2>ホームページ</h2>
-          </div>
+    <!--Part2 nav-->
+    <nav>
+      <div class="left_blue_ribbon"></div>
+      <div class="white_triangle"></div>
+      <div class="title">
+        <a href="index_responsive.html">
+          <div><img src="../img/小さいタイトル.png" alt="" /></div>
+          <div class="title_text">タピオカカフェ</div>
         </a>
       </div>
-      <div class="menu_open menu_switch">
-        <div class="list_title" onclick="switchMenu(this)">
-          <h2>メニュー</h2>
-          <div class="plus"><i class="fa-solid fa-plus"></i></div>
-          <div class="minus"><i class="fa-solid fa-minus"></i></div>
-        </div>
-        <ul>
-          <a href="paper_and_flower_menu.html">
-            <li><i class="fa-solid fa-clover"></i>すべて</li>
-          </a>
-          <li><i class="fa-solid fa-clover"></i>コーヒー</li>
-          <li><i class="fa-solid fa-clover"></i>ミルクティー</li>
-          <li><i class="fa-solid fa-clover"></i>フルーツティー</li>
-          <li><i class="fa-solid fa-clover"></i>甘いもの</li>
-          <li><i class="fa-solid fa-clover"></i>塩っぱいもの</li>
-        </ul>
-      </div>
-      <div class="menu_switch">
-        <div class="list_title" onclick="switchMenu(this)">
-          <h2>店舗情報</h2>
-          <div class="plus"><i class="fa-solid fa-plus"></i></div>
-          <div class="minus"><i class="fa-solid fa-minus"></i></div>
-        </div>
-        <ul>
-          <li><i class="fa-solid fa-clover"></i>営業時間</li>
-          <li><i class="fa-solid fa-clover"></i>休みカレンダー</li>
-          <li><i class="fa-solid fa-clover"></i>ニュース</li>
-        </ul>
-      </div>
-      <div class="menu_switch">
-        <div class="list_title" onclick="switchMenu(this)">
-          <h2>アクセス</h2>
-          <div class="plus"><i class="fa-solid fa-plus"></i></div>
-          <div class="minus"><i class="fa-solid fa-minus"></i></div>
-        </div>
-        <ul>
-          <li><i class="fa-solid fa-clover"></i>連絡先</li>
-          <li><i class="fa-solid fa-clover"></i>駅から徒歩方法</li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!--Part3 main-->
-  <main>
-    <div class="top_mask">
-      <div class="blue_box"></div>
-      <div class="white_box"></div>
-    </div>
 
-    <div class="right_blue_ribbon"></div>
-
-    <section class="function_button">
-      <div class="picture_above">
-        <img src="img/クーポン.png" alt="100円offクーポン" />
-        <img src="img/スタンプカード.png" alt="" />
-      </div>
-      <div class="picture_below">
-        <a href="paper_and_flower_select.html"
-          ><img src="img/おすすめ.png" alt=""
-        /></a>
-        <a href="paper_and_flower_menu.html"
-          ><img src="img/注文する.png" alt=""
-        /></a>
-      </div>
-    </section>
-    <section class="news_area">
-      <div class="news_detail">
-        <h3>意外の組合せ？パイナップルと柚子茶！</h3>
-        <ul>
-          <li class="pineapple">パイナップル</li>
-          <li class="yuzu">柚子</li>
-          <li class="milk">ミルク</li>
-          <li class="tea">ティー</li>
-        </ul>
-        <div class="picture_show">
-          <img src="img/ダンス人、パイナップル、柚子.png" alt="" />
-          <img src="img/パイナップルティー.png" alt="" />
+      <div class="contents">
+        <div class="list_wrapper">
+          <div class="list_title">
+            <a href="index_responsive.html">
+              <h2>ホームページ</h2>
+            </a>
+          </div>
+          <ul class="list_detail"></ul>
+        </div>
+        <div class="menu_open menu_switch list_wrapper">
+          <div class="list_title" onclick="switchMenu(this)">
+            <h2>メニュー</h2>
+            <div class="plus"><i class="fa-solid fa-plus"></i></div>
+            <div class="minus"><i class="fa-solid fa-minus"></i></div>
+          </div>
+          <ul class="list_detail">
+            <a href="paper_and_flower_menu.html">
+              <li><i class="fa-solid fa-clover"></i>すべて</li>
+            </a>
+            <li><i class="fa-solid fa-clover"></i>コーヒー</li>
+            <li><i class="fa-solid fa-clover"></i>ミルクティー</li>
+            <li><i class="fa-solid fa-clover"></i>フルーツティー</li>
+            <li><i class="fa-solid fa-clover"></i>甘いもの</li>
+            <li><i class="fa-solid fa-clover"></i>塩っぱいもの</li>
+          </ul>
+        </div>
+        <div class="menu_switch list_wrapper">
+          <div class="list_title" onclick="switchMenu(this)">
+            <h2>店舗情報</h2>
+            <div class="plus"><i class="fa-solid fa-plus"></i></div>
+            <div class="minus"><i class="fa-solid fa-minus"></i></div>
+          </div>
+          <ul class="list_detail">
+            <li><i class="fa-solid fa-clover"></i>営業時間</li>
+            <li><i class="fa-solid fa-clover"></i>休みカレンダー</li>
+            <li><i class="fa-solid fa-clover"></i>ニュース</li>
+          </ul>
+        </div>
+        <div class="menu_switch list_wrapper">
+          <div class="list_title" onclick="switchMenu(this)">
+            <h2>アクセス</h2>
+            <div class="plus"><i class="fa-solid fa-plus"></i></div>
+            <div class="minus"><i class="fa-solid fa-minus"></i></div>
+          </div>
+          <ul class="list_detail">
+            <li><i class="fa-solid fa-clover"></i>連絡先</li>
+            <li><i class="fa-solid fa-clover"></i>駅から徒歩方法</li>
+          </ul>
         </div>
       </div>
-      <div class="news_detail">
-        <h3>夏でも、いちごを飲みたい！！</h3>
-        <ul>
-          <li class="limit">期間限定</li>
-          <li class="strawberry">いちご</li>
-          <li class="milk">ミルク</li>
-          <li class="tea">ティー</li>
-        </ul>
-        <div class="picture_show">
-          <img src="img/いちごがミルクに落ちる.png" alt="" />
-          <img src="img/ピンクレース、いいごミルク.png" alt="" />
-        </div>
-      </div>
-    </section>
+    </nav>
+    <!--Part3 main-->
+    <main class="main_wraper">
+      <!-- <div class="top_mask">
+        <div class="blue_box"></div>
+        <div class="white_box"></div>
+      </div> -->
 
-    <footer>
-      <div>
-        <i class="fa-solid fa-clover"></i>make by NIE XIAOLIN<i
-          class="fa-solid fa-clover"
-        ></i>
+      <div class="right_blue_ribbon"></div>
+
+      <section class="function_button section_wrapper">
+        <div class="picture_above detail_wrapper">
+          <a href=""
+            ><img src="../img/クーポン.png" alt="100円offクーポン"
+          /></a>
+          <a href=""><img src="../img/スタンプカード.png" alt="" /></a>
+        </div>
+        <div class="picture_below detail_wrapper">
+          <a href="paper_and_flower_select.html"
+            ><img src="../img/おすすめ.png" alt=""
+          /></a>
+          <a href="paper_and_flower_menu.html"
+            ><img src="../img/注文する.png" alt=""
+          /></a>
+        </div>
+      </section>
+      <section class="news_area section_wrapper">
+        <div class="news_detail detail_wrapper">
+          <h3>意外の組合せ？パイナップルと柚子茶！</h3>
+          <ul>
+            <li class="pineapple">パイナップル</li>
+            <li class="yuzu">柚子</li>
+            <li class="milk">ミルク</li>
+            <li class="tea">ティー</li>
+          </ul>
+          <div class="picture_show">
+            <img src="../img/ダンス人、パイナップル、柚子.png" alt="" />
+            <img src="../img/パイナップルティー.png" alt="" />
+          </div>
+        </div>
+        <div class="news_detail detail_wrapper">
+          <h3>夏でも、いちごを飲みたい！！</h3>
+          <ul>
+            <li class="limit">期間限定</li>
+            <li class="strawberry">いちご</li>
+            <li class="milk">ミルク</li>
+            <li class="tea">ティー</li>
+          </ul>
+          <div class="picture_show">
+            <img src="../img/いちごがミルクに落ちる.png" alt="" />
+            <img src="../img/ピンクレース、いいごミルク.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div>
+          <i class="fa-solid fa-clover"></i>make by NIE XIAOLIN<i
+            class="fa-solid fa-clover"
+          ></i>
+        </div>
+      </footer>
+      <div class="right_flower">
+        <img src="../img/右側葉.png" alt="" />
       </div>
-    </footer>
-    <div class="right_flower">
-      <img src="img/右側葉.png" alt="" />
-    </div>
-  </main>
-</body>
+    </main>
+  </body>
+</html>
