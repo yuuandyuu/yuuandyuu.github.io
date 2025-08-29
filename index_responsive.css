@@ -64,11 +64,14 @@ nav {
   color: white;
   text-decoration: none;
 }
-.title img {
+.title_img {
   display: block;
   width: 100%;
   max-width: 354px;
   margin: 0 auto;
+}
+.title_img_small {
+  display: none;
 }
 .title_text {
   text-align: right;

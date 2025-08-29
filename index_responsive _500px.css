@@ -34,12 +34,19 @@
     display: flex;
     align-items: center;
   }
-  .title img {
-    width: 50%;
+  .title_img {
+    width: 70%;
+    margin: 5px 5px;
+  }
+  .title_img_small {
+    display: block;
+  }
+  .title_img_big {
+    display: none;
   }
   .title .title_text {
     text-align: center;
-    width: 50%;
+    width: 30%;
   }
 
   /*nav部分：詳しいリスト*/
@@ -101,7 +108,7 @@
   .main_wraper {
     position: static;
     width: 100%;
-    padding: 0 30px;
+    padding: 0 0;
   }
 
   /*main部分：上の青い背景*/

@@ -51,6 +51,23 @@
           menu.classList.add("menu_open");
         }
       }
+      /**
+       * タイトルの画像の変更
+       */
+      // function checkScreenSizeAndChangeTitleImg() {
+      //   const titleImg = document.querySelector(".title_img");
+      //   if (window.innerWidth < 500) {
+      //     if (titleImg.src !== "img/小さいタイトル.png") {
+      //       titleImg.src = "img/小さいタイトル.png";
+      //     }
+      //   } else {
+      //     if (titleImg.src !== "img/大きいタイトル.png") {
+      //       titleImg.src = "img/大きいタイトル.png";
+      //     }
+      //   }
+      //   checkScreenSizeAndChangeTitleImg();
+      //   window.addEventListener("resize", checkScreenSizeAndChangeTitleImg);
+      // }
     </script>
   </head>
   <body>
@@ -64,8 +81,11 @@
       <div class="left_blue_ribbon"></div>
       <div class="white_triangle"></div>
       <div class="title">
-        <a href="index_responsive.html">
-          <div><img src="img/小さいタイトル.png" alt="" /></div>
+        <a href="index.html">
+          <div class="title_img">
+            <img class="title_img_big" src="img/大きいタイトル.png" alt="" />
+            <img class="title_img_small" src="img/小さいタイトル.png" alt="" />
+          </div>
           <div class="title_text">タピオカカフェ</div>
         </a>
       </div>
@@ -73,7 +93,7 @@
       <div class="contents">
         <div class="list_wrapper">
           <div class="list_title">
-            <a href="index_responsive.html">
+            <a href="index.html">
               <h2>ホームページ</h2>
             </a>
           </div>
